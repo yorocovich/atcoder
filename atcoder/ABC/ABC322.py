@@ -1,4 +1,4 @@
-# A
+# A 
 n = int(input())
 s = input()
 
