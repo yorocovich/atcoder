@@ -1,3 +1,9 @@
+# A
+S = input()
+a, b, c = S.split('|')
+print(a+c)
+
+# B
 hasNext = True
 a = []
 while hasNext:
