@@ -1,3 +1,4 @@
+# A
 ranker_dict = {"tourist":3858
 ,"ksun48":3679
 ,"Benq":3658
@@ -12,3 +13,16 @@ ranker_dict = {"tourist":3858
 s = input()
 
 print(ranker_dict[s])
+
+# B
+n = int(input())
+ans = ""
+for i in range(n+1):
+  for j in range(1,10):
+    if n % j == 0 and i % (n / j) == 0:
+      ans += str(j)
+      break
+    if j == 9:
+      ans += "-"
+
+print(ans)
