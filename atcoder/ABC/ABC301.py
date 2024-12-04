@@ -1,3 +1,4 @@
+# A
 n = int(input())
 s = input()
 
@@ -21,3 +22,27 @@ for i in range(n):
 
 if not f:
   print("A" if a > t else "T")
+
+  # B
+  n = int(input())
+nums = list(map(int,input().split()))
+ans = []
+ans.append(nums[0])
+
+for i in range(1,n):
+  if abs(nums[i-1] - nums[i]) == 1:
+    ans.append(nums[i])
+    continue
+  else:
+    s = nums[i-1]
+    e = nums[i]
+    if s > e:
+      while s > e:
+        s -= 1
+        ans.append(s)
+    elif s < e:
+      while s < e:
+        s += 1
+        ans.append(s)
+
+print(*ans)
