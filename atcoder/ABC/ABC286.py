@@ -1,3 +1,4 @@
+# A
 n, p, q, r, s = map(int,input().split())
 nums = list(map(int,input().split()))
 nums_before_p = []
@@ -22,3 +23,9 @@ for i in range(n):
 ans = nums_before_p + nums_rs + nums_qr + nums_pq + nums_after_s
 
 print(*ans)
+
+# B
+n = int(input())
+s = input()
+
+print(s.replace("na","nya"))
