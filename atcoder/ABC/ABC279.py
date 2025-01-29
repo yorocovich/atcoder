@@ -1,3 +1,4 @@
+# A
 s = input()
 ans = 0
 for i in range(len(s)):
@@ -9,3 +10,12 @@ for i in range(len(s)):
     ans += 0
 
 print(ans)
+
+# B
+w = input()
+s = input()
+
+if s in w:
+  print("Yes")
+else:
+  print("No")
